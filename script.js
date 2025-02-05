@@ -97,7 +97,7 @@ class Blog {
         e.preventDefault();
         this.handleSubmit();
       });
-     
+      
       this.cancelBtn.addEventListener("click", () => {
         this.resetForm();
       });
@@ -115,7 +115,7 @@ class Blog {
         } else {
           this.blogManager.addBlog(title, content, tags);
         }
-       
+        
         this.resetForm();
         this.render();
       }
